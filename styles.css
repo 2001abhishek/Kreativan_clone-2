@@ -890,7 +890,7 @@ header {
 /* Media query for mobile devices */
 @media (max-width: 768px) {
     .mian-footer {
-        height: 140vh;
+        height: 155vh;
         background-color: #eaf1f1de;
         border-bottom: 1.5px solid #00bbee;
     }
@@ -917,6 +917,9 @@ header {
     .contact-us p,
     .our-company p {
         padding: 10px; /* Reduce padding for mobile */
+    }
+    .grid{
+        grid-template-columns: repeat(1,1fr);
     }
 }
 /* <!-- Closing of main footer  --> */
@@ -970,6 +973,48 @@ header {
     }
 }
 
+/* search .search-box */
 
+.search-container {
+    position: relative;
+    margin: 20px;
+}
+
+.search-icon {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-box {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    margin-top: 10px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#search-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.close-icon {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
 
 
